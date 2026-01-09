@@ -1,19 +1,12 @@
-online-marketplace-mysql-project/
-│
-├── README.md                  ← Main overview, recruiter-friendly
-├── ER_DIAGRAM.png              ← ER diagram image
-├── CHEN_DIAGRAM.png            ← Chen notation diagram image
-├── SQL_SCRIPTS/                ← Folder for SQL files
-│    ├── create_tables.sql
-│    ├── triggers.sql
-│    ├── stored_procedures.sql
-│    ├── analytical_queries.sql
-├── PYTHON/                     ← Optional scripts for data import
-│    └── generate_products_data.py
-├── IMAGES/                     ← Screenshots of table results / dashboards
-│    ├── top_customers.png
-│    ├── top_vendors.png
-│    ├── best_selling_products.png
-│    └── revenue_rank.png
-└── DOCS/                       ← Optional notes, diagrams
-     └── schema_diagram.pdf
+mysql-online-marketplace/
+├── SQL_SCRIPTS/
+│   ├── create_tables.sql
+│   ├── triggers.sql
+│   ├── stored_procedures.sql
+│   └── analytical_queries.sql
+├── PYTHON/
+│   └── generate_products_data.py
+├── IMAGES/
+│   ├── er_diagram.png
+│   ├── top_customers.png
+│   └── top_vendors.png
