@@ -1,12 +1,88 @@
 mysql-online-marketplace/
 ├── SQL_SCRIPTS/
-│   ├── create_tables.sql
-│   ├── triggers.sql
-│   ├── stored_procedures.sql
-│   └── analytical_queries.sql
+│ ├── create_tables.sql # Add your CREATE TABLE scripts here
+│ ├── triggers.sql # Add your TRIGGER scripts here
+│ ├── stored_procedures.sql # Add your STORED PROCEDURES here
+│ └── analytical_queries.sql # Add your SQL queries for analysis here
 ├── PYTHON/
-│   └── generate_products_data.py
+│ └── generate_products_data.py # Optional Python script for dummy data import
 ├── IMAGES/
-│   ├── er_diagram.png
-│   ├── top_customers.png
-│   └── top_vendors.png
+│ ├── ER_DIAGRAM.png # Placeholder for ER Diagram
+│ ├── CHEN_DIAGRAM.png # Placeholder for Chen Notation Diagram
+│ ├── top_customers.png # Placeholder for Top 5 Customers screenshot
+│ ├── top_vendors.png # Placeholder for Most Profitable Vendor screenshot
+│ ├── best_selling_products.png # Placeholder for Top 3 Best-Selling Products screenshot
+│ └── revenue_rank.png # Placeholder for Revenue Ranking screenshot
+└── README.md  # # Online Marketplace SQL Project
+
+
+## 📌 Project Overview
+This project demonstrates the creation of a **relational database** for an online shopping marketplace using **MySQL**, from database design to analytical queries.
+
+
+Key skills showcased:
+- SQL (Joins, Aggregations, Window Functions, Set Operations)
+- Database Design (ER Diagram, Chen Notation, Normalization)
+- Triggers & Stored Procedures
+- Python (for dummy data import)
+- Data Analytics & Query Optimization
+
+
+---
+
+
+## 🏗 Database Design
+- **ER Diagram:** ![ER Diagram](IMAGES/ER_DIAGRAM.png)
+- **Chen Notation Diagram:** ![Chen Diagram](IMAGES/CHEN_DIAGRAM.png)
+
+
+Tables included:
+- Products, Vendors, Customers, Orders, OrderDetails, ShopperReviews, Costs, Revenue
+
+
+**Features implemented:**
+- Primary & foreign keys
+- Data normalization to 3NF
+- Triggers for review validation (1-5 stars)
+- Stored procedures for revenue, cost, and profit calculations
+
+
+---
+
+
+## 💾 Data Population
+- Python script for generating dummy product data: `PYTHON/generate_products_data.py`
+- Excel import for other tables
+
+
+---
+
+
+## 🔍 Analytical Objectives
+1. Top 5 customers by spending ![Top Customers](IMAGES/top_customers.png)
+2. Most profitable vendor ![Top Vendor](IMAGES/top_vendors.png)
+3. Top 3 best-selling products ![Best-Selling Products](IMAGES/best_selling_products.png)
+4. Average product revenue based on customer reviews ![Revenue Rank](IMAGES/revenue_rank.png)
+5. Product ranking using window functions
+6. Best-selling product category using set operations
+
+
+All SQL queries are in `SQL_SCRIPTS/analytical_queries.sql`.
+
+
+---
+
+
+## ⚙ How to Use
+1. Clone the repo
+2. Run `SQL_SCRIPTS/create_tables.sql` to create the schema
+3. Run Python scripts in `PYTHON/` (if used) to populate data
+4. Execute SQL queries from `SQL_SCRIPTS/analytical_queries.sql`
+5. Review results in MySQL or visualize as needed
+
+
+---
+
+
+## 📌 Conclusion
+This project demonstrates **end-to-end SQL and data analytics skills** including database design, query optimization, triggers, stored procedures, and analytical problem solving. It is fully recruiter-friendly and ready to showcase in a portfolio.
